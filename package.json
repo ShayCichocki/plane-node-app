@@ -1,0 +1,24 @@
+{
+  "name": "plane-test",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">20.0.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "turbo dev",
+    "start:client": "npm run start:dev --workspace=client",
+    "start:server": "npm run start:dev --workspace=server",
+    "build": "turbo build",
+    "test": "turbo test",
+    "test-server": "npm run test --workspace=client",
+    "test-client": "npm  test --workspace=server",
+    "format": "turbo format",
+    "lint": "turbo lint"
+  },
+  "dependencies": {
+    "turbo": "^1.8.1"
+  }
+}
