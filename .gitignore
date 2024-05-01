@@ -1,0 +1,11 @@
+node_modules
+.idea
+.turbo
+
+apps/client/.env
+apps/server/.env
+apps/mpserver/.env
+
+apps/mpserver/node_modules
+apps/client/node_modules
+apps/server/node_modules
